@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ibrinks">Brincadeiras</label>
+            <input type="text" name="brincadeiras" id="ibrinks" list="listbrinks">
+
+                    <datalist id="listbrinks">
+                        <option value="brinks">Pula pula</option>
+                        <option value="brinks">peteca</option>
+                        <option value="brinks">bola</option>
+                        <option value="brinks">bicicleta</option>
+                    </datalist>
+        </p>
+        <P>
+            <label for="prof">profisão</label>
+            <input type="text" name="prof" id="iprof" list="prof">
+            <datalist id="prof">
+                <option value="DEV">Desenvolverdor</option>
+                <option value="PRF">Professor</option>
+                <option value="ECND">Encanador</option>
+                <option value="EMPDD">Empreendedor</option>
+            </datalist>
+        </P>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="ismg" cols="10" rows="5"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
